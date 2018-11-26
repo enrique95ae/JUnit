@@ -1,7 +1,6 @@
 package org.psnbtech;
 
 
-
 import static org.junit.Assert.*;
 
 import org.junit.After;
@@ -26,7 +25,7 @@ public class TetrisTest {
 	@Test
 	public void testUpdateGame()
 	{
-		Tetris tetris = new Tetris();
+		
 	}
 
 }

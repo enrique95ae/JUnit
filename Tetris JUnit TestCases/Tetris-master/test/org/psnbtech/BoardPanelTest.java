@@ -17,16 +17,17 @@ public class BoardPanelTest {
 	}
 
 	@Test
-	public void testIsValidAndEmpty() {
+    public void testIsValidAndEmpty() {
+        assertFalse("Column fail",board.isValidAndEmpty(type, -1, 5, 0));
+        assertFalse("Row fail",board.isValidAndEmpty(type, 4, -20, 0));
+        assertTrue("Overall success",board.isValidAndEmpty(type, 5, 5, 0));
+    }
 
-		
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testAddPiece() {
-		fail("Not yet implemented");
-	}
+    @Test
+    public void testAddPiece() {
+        assertTrue("Type check success",type.isTile(4, 4, 0));
+        assertTrue("Type check fail",type.isTile(-5, -5, 0));
+    }
 
 	@Test
 	public void testCheckLines() {
